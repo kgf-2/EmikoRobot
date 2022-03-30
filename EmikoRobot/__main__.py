@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
+✪ I'm an Nicky bot [✨](https://te.legra.ph/file/41ba24ed8abc30c4463d7.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -93,7 +93,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Emiko Robot", callback_data="emiko_"),
+        InlineKeyboardButton(text="About Nicky bot", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -103,7 +103,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Emiko To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="➗ Add Nicky To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
@@ -374,15 +374,15 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="emiko_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
+                    InlineKeyboardButton(text="Admins", callback_data="Nicky_admin"),
+                    InlineKeyboardButton(text="Notes", callback_data="Nicky_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="emiko_credit"),
+                    InlineKeyboardButton(text="Support", callback_data="Nicky_support"),
+                    InlineKeyboardButton(text="Credits", callback_data="Nicky_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/kennedy-ex/EmikoRobot"),
+                    InlineKeyboardButton(text="Nicky bot channel", url="https://t.me/+StlyIY1PBHtlZWQ9"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
@@ -430,19 +430,19 @@ def emiko_about_callback(update, context):
             f"\n\nYou can also set buttons for notes and filters (refer help menu)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="Nicky_")]]
             ),
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
             text="*๏ Emiko support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Emiko.",
+            "\nJoin My Support Group/Channel for see or report a problem on Nicky.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/emikosupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/KennedyProject"),
+                    InlineKeyboardButton(text="Support", url="t.me/+StlyIY1PBHtlZWQ9"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/+StlyIY1PBHtlZWQ9"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
@@ -455,33 +455,33 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_credit":
         query.message.edit_text(
-            text=f"๏ Credis for Emiko\n"
+            text=f"๏ Credis for Nicky\n"
             "\nHere Developers Making And Give Inspiration For Made The EmikoRobot",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="sena-ex", url="https://github.com/kennedy-ex"),
-                    InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
+                    InlineKeyboardButton(text="sena-ex", url="https://t.me/+StlyIY1PBHtlZWQ9"),
+                    InlineKeyboardButton(text="TheHamkerCat", url="https://t.me/+StlyIY1PBHtlZWQ9"),
                  ],
                  [
-                    InlineKeyboardButton(text="Feri", url="https://github.com/FeriEXP"),
-                    InlineKeyboardButton(text="riz-ex", url="https://github.com/riz-ex"),
+                    InlineKeyboardButton(text="Feri", url="https://t.me/+StlyIY1PBHtlZWQ9"),
+                    InlineKeyboardButton(text="riz-ex", url="https://t.me/+StlyIY1PBHtlZWQ9"),
                  ],
                  [
-                    InlineKeyboardButton(text="Anime Kaizoku", url="https://github.com/animekaizoku"),
-                    InlineKeyboardButton(text="TheGhost Hunter", url="https://github.com/HuntingBots"),
+                    InlineKeyboardButton(text="Anime Kaizoku", url="https://t.me/+StlyIY1PBHtlZWQ9"),
+                    InlineKeyboardButton(text="TheGhost Hunter", url="https://t.me/+StlyIY1PBHtlZWQ9"),
                  ],
                  [
-                    InlineKeyboardButton(text="Inuka Asith", url="https://github.com/inukaasith"),
-                    InlineKeyboardButton(text="Noob-Kittu", url="https://github.com/noob-kittu"),
+                    InlineKeyboardButton(text="Inuka Asith", url="https://t.me/+StlyIY1PBHtlZWQ9"),
+                    InlineKeyboardButton(text="Noob-Kittu", url="https://t.me/+StlyIY1PBHtlZWQ9"),
                  ],
                  [
-                    InlineKeyboardButton(text="Queen Arzoo", url="https://github.com/QueenArzoo"),
-                    InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
+                    InlineKeyboardButton(text="Queen Arzoo", url="https://t.me/+StlyIY1PBHtlZWQ9"),
+                    InlineKeyboardButton(text="Paul Larsen", url="https://t.me/+StlyIY1PBHtlZWQ9"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="Nicky_"),
                  ]
                 ]
             ),
@@ -507,7 +507,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_")
+                    InlineKeyboardButton(text="Go Back", callback_data="Nicky_")
                  ]
                 ]
             ),
